@@ -56,7 +56,8 @@ function CreateListModal({ open, onClose, onSave }) {
 			<div className='field-group'>
 				<div className='date-input-wrapper'>
 					<Calendar size={18} />
-					<input type='date' value={deadline} onChange={e => setDeadline(e.target.value)} />
+					<input type='date' value={deadline} onChange={e => setDeadline(e.target.value)} aria-label='Data deadline' />
+					{!deadline && <span className='date-placeholder'>Brak terminu</span>}
 				</div>
 			</div>
 
