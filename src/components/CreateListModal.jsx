@@ -54,7 +54,7 @@ function CreateListModal({ open, onClose, onSave }) {
 
 			<input placeholder='Tytuł listy' value={title} onChange={e => setTitle(e.target.value)} />
 			<div className='field-group'>
-				<input type='date' placeholder='Deadline' value={deadline} onChange={e => setDeadline(e.target.value)} />
+				<input type='date' value={deadline} onChange={e => setDeadline(e.target.value)} />
 			</div>
 
 			<div className='items-section'>
