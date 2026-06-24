@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { X } from 'lucide-react'
+import { X, Calendar } from 'lucide-react'
 import BottomSheet from './BottomSheet'
 function CreateListModal({ open, onClose, onSave }) {
 	const [title, setTitle] = useState('')
@@ -54,7 +54,10 @@ function CreateListModal({ open, onClose, onSave }) {
 
 			<input placeholder='Tytuł listy' value={title} onChange={e => setTitle(e.target.value)} />
 			<div className='field-group'>
-				<input type='date' value={deadline} onChange={e => setDeadline(e.target.value)} />
+				<div className='date-input-wrapper'>
+					<Calendar size={18} />
+					<input type='date' value={deadline} onChange={e => setDeadline(e.target.value)} />
+				</div>
 			</div>
 
 			<div className='items-section'>
