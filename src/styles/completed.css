@@ -1,0 +1,36 @@
+.completed-page {
+	padding: 20px;
+}
+
+.completed-card {
+	background: var(--primary-light);
+
+	border-radius: var(--radius);
+
+	box-shadow: var(--shadow);
+
+	padding: 18px;
+
+	margin-bottom: 12px;
+}
+
+.completed-card h3 {
+	margin-bottom: 8px;
+}
+
+.completed-card p {
+	color: var(--text-muted);
+}
+
+.completed-row {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.completed-link-card {
+	flex: 1;
+}
+.overdue-card {
+	background: rgba(239, 68, 68, 0.12);
+}

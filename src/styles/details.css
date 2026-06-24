@@ -1,0 +1,173 @@
+.details-page {
+	padding: 20px;
+	padding-bottom: 120px;
+}
+
+.details-header {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+
+	margin-bottom: 24px;
+}
+
+.details-header button {
+	background: white;
+
+	width: 40px;
+	height: 40px;
+
+	border-radius: 50%;
+
+	box-shadow: var(--shadow);
+}
+
+.progress-wrapper {
+	margin-bottom: 24px;
+}
+
+.progress-info {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 8px;
+}
+
+.progress-track {
+	height: 10px;
+
+	border-radius: 99px;
+
+	overflow: hidden;
+
+	background: var(--primary-light);
+}
+
+.progress-fill {
+	height: 100%;
+
+	background: var(--primary);
+
+	transition: width 0.4s ease;
+}
+
+.todo-list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.todo-item {
+	background: white;
+
+	border-radius: 14px;
+
+	padding: 16px;
+
+	box-shadow: var(--shadow);
+
+	display: flex;
+
+	justify-content: space-between;
+
+	align-items: center;
+
+	transition: var(--transition);
+}
+
+.todo-item label {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	flex: 1;
+}
+
+.todo-item input[type='checkbox'] {
+	width: 20px;
+	height: 20px;
+
+	accent-color: var(--primary);
+
+	flex-shrink: 0;
+}
+
+.todo-item.completed span {
+	text-decoration: line-through;
+
+	opacity: 0.5;
+}
+
+.todo-item button {
+	background: none;
+}
+
+.add-todo {
+	position: fixed;
+
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+
+	display: flex;
+	gap: 10px;
+}
+
+.add-todo input {
+	flex: 1;
+
+	padding: 14px;
+
+	border: none;
+
+	border-radius: 14px;
+
+	box-shadow: var(--shadow);
+}
+
+.add-todo button {
+	background: var(--primary);
+
+	color: white;
+
+	padding: 14px 20px;
+
+	border-radius: 14px;
+}
+
+.completed-title {
+	font-size: 14px;
+
+	font-weight: 600;
+
+	color: var(--text-muted);
+
+	margin-top: 12px;
+	text-transform: uppercase;
+
+	letter-spacing: 0.08em;
+}
+.completed-toggle {
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+
+	gap: 8px;
+
+	background: transparent;
+
+	color: var(--text-muted);
+
+	font-size: 14px;
+
+	font-weight: 600;
+
+	text-transform: uppercase;
+
+	letter-spacing: 0.08em;
+
+	margin-bottom: 12px;
+
+	padding: 4px 0;
+}

@@ -1,0 +1,96 @@
+@import './variables.css';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: Inter, system-ui, sans-serif;
+
+	background: var(--bg-main);
+
+	color: var(--text-main);
+
+	min-height: 100vh;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font: inherit;
+}
+
+input {
+	font: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#root {
+	min-height: 100vh;
+}
+
+.page-title {
+	font-size: 32px;
+	font-weight: 700;
+
+	margin-bottom: 24px;
+}
+
+.page-header {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+
+	height: 48px;
+
+	margin-bottom: 24px;
+}
+
+.page-header h1 {
+	margin-left: 16px;
+
+	font-size: 28px;
+	font-weight: 700;
+
+	display: flex;
+	align-items: center;
+
+	height: 100%;
+}
+
+.page-header button {
+	width: 40px;
+	height: 40px;
+
+	border-radius: 50%;
+
+	background: var(--primary);
+  color: white;
+	box-shadow: var(--shadow);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	flex-shrink: 0;
+}
+
+.page-header button:active {
+	transform: scale(0.95);
+}
+
+.page-transition {
+	width: 100%;
+}
