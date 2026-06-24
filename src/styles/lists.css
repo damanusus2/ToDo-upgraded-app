@@ -304,7 +304,8 @@ select {
 .date-input-wrapper svg {
 	position: absolute;
 
-	left: 14px;
+	right: 18px;
+	top: 32px;
 
 	color: var(--text-muted);
 
